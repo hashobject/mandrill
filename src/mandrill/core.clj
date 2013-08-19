@@ -7,9 +7,6 @@
   (str "https://mandrillapp.com/api/1.0/" route ".json"))
 
 
-
-
-
 (defn post-request
   "Make a generic POST HTTP request"
   [route body]
@@ -44,17 +41,10 @@
 (defn users->senders [api-key]
   (post-request "users/senders" {:key api-key}))
 
-(defn messages->send [message]
-  (post-request "messages/send" message))
-
-(messages->send {:key ""
-                 :message {:text "Hello"
-                           :subjet "Hey Anton. API test"
-                           :from_email "team@communi.st"
-                           :from_name "team communi.st"
-                           :to: [{:name "Anton Podviaznikov"
-                                  :email "podviaznikov@gmail.com"}]
-                           :async false}})
+(defn messages->send [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=send"
+  (post-request "messages/send" data))
 
 
 
