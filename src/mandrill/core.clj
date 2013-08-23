@@ -46,5 +46,42 @@
   https://mandrillapp.com/api/docs/messages.JSON.html#method=send"
   (post-request "messages/send" data))
 
+(defn messages->search [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=search"
+  (post-request "messages/search" data))
 
+(defn messages->search-time-series [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=search-time-series"
+  (post-request "messages/search-time-series" data))
 
+(defn messages->info [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=info"
+  (post-request "messages/info" data))
+
+(defn messages->parse [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=parse"
+  (post-request "messages/parse" data))
+
+(defn messages->send-raw [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=send-raw"
+  (post-request "messages/send-raw" data))
+
+(defn messages->list-scheduled [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=list-scheduled"
+  (post-request "messages/list-scheduled" data))
+
+(defn messages->cancel-scheduled [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=cancel-scheduled"
+  (post-request "messages/cancel-scheduled" data))
+
+(defn messages->reschedule  [data]
+  "Documentation for the 'data' paramerer located on
+  https://mandrillapp.com/api/docs/messages.JSON.html#method=reschedule "
+  (post-request "messages/reschedule" data))
