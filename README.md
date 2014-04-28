@@ -2,7 +2,7 @@
 
 A Clojure library for interaction with [Mandrill REST API](https://mandrillapp.com/api/docs/).
 
-[![Dependencies Status](http://jarkeeper.com/hashobject/mandrill/status.png)](http://jarkeeper.com/hashobject/mandrill)
+[![Dependencies Status](https://jarkeeper.com/hashobject/mandrill/status.png)](https://jarkeeper.com/hashobject/mandrill)
 
 
 ## Contributions
